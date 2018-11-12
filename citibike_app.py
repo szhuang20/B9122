@@ -118,38 +118,6 @@ def references():
 	session["data_loaded"] = True
 	return render_template('references.html')
 
-#HTML PAGES
-"""
-@app.route("/weekday")#,methods=['GET','POST'])
-def weekday():
-	session["data_loaded"] = True
-	return render_template('weekday.html')
-"""
-@app.route("/weekend")#,methods=['GET','POST'])
-def weekend():
-	session["data_loaded"] = True
-	return render_template('weekend_1.html')
-
-@app.route("/combined")#,methods=['GET','POST'])
-def combined():
-	session["data_loaded"] = True
-	return render_template('Combine.html')
-
-@app.route("/heat_nyc")#,methods=['GET','POST'])
-def heat_nyc():
-	session["data_loaded"] = True
-	return render_template('heat_nyc.html')
-
-@app.route("/weekday")#,methods=['GET','POST'])
-def  weekday():
-    session["data_loaded"] = True
-    return render_template('weekday.html') 
-    
-@app.route("/weekend_1")#,methods=['GET','POST'])
-def  weekend_1():
-    session["data_loaded"] = True
-    return render_template('weekend_1.html')
-
 
 if __name__ == "__main__":
     app.run(debug=True)
